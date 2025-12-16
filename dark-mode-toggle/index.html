@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle - Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Dark Mode Toggle Feature</h1>
+            <div class="header-actions">
+                <div class="user-profile">
+                    <span>User Profile</span>
+                </div>
+                <button 
+                    id="darkModeToggle" 
+                    class="dark-mode-toggle" 
+                    aria-label="Toggle dark mode"
+                    role="switch"
+                    aria-checked="false">
+                    <svg class="icon icon-sun" viewBox="0 0 24 24" width="20" height="20">
+                        <!-- Full sun with all rays -->
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="icon icon-moon" viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="feature-intro">
+            <h2>About Dark Mode Toggle</h2>
+            <p>This demo implements a dark mode toggle feature with:</p>
+            <ul>
+                <li><strong>Accessibility:</strong> Keyboard navigable and screen reader compatible</li>
+                <li><strong>Persistence:</strong> Your theme choice is saved to localStorage</li>
+                <li><strong>Smooth Transitions:</strong> Theme changes with 0.3s ease animation</li>
+                <li><strong>Cross-browser Support:</strong> Works on Chrome, Firefox, Safari, and Edge</li>
+            </ul>
+        </section>
+
+        <section class="demo-content">
+            <h3>Demo Content</h3>
+            <p>This is sample content to demonstrate how the dark mode looks. Try clicking the toggle button in the header to switch between light and dark modes.</p>
+            
+            <div class="card">
+                <h4>Card Example</h4>
+                <p>This card demonstrates how content styling changes in dark mode.</p>
+            </div>
+
+            <div class="card">
+                <h4>Another Card</h4>
+                <p>Cards maintain good contrast and readability in both light and dark modes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dark Mode Toggle Feature. Theme preference persists across sessions.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
